@@ -9,7 +9,7 @@ exports.checkout = (req, res) => {
   const { items, freight, paymentMethod, cardData } = req.body;
   try {
     const result = checkoutService.checkout(userData.id, items, freight, paymentMethod, cardData);
-    res.json({ valorFinal: result.total, ...result });
+    res.status(200).json({ valorFinal: result.total, ...result });
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
