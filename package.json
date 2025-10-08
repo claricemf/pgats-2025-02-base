@@ -7,7 +7,7 @@
     "test": "mocha rest/test/**/*.test.js --timeout 10000 --reporter mochawesome",
     "test-external": "mocha rest/test/external/**/*.test.js --timeout 10000 --reporter mochawesome",
     "test-controller": "mocha rest/test/controller/**/*.test.js --timeout 10000 --reporter mochawesome",
-    "start": "node src/server.js"
+    "start": "node rest/server.js"
   },
   "repository": {
     "type": "git",
