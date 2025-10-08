@@ -7,9 +7,21 @@ const e = require('express');
 
 describe('Checkout Controller', () => {
     describe('POST /api/checkout', () => {
+            beforeEach(async () => {
+                const responseLogin = await request(app)
+                .post('/api/users/login')
+                .send({
+                    email: 'alice@email.com',
+                    password: '123456'
+                });
+                console.log(responseLogin.body);
+                token = responseLogin.body.token;
+            });
+
         it('Quando informo dados válidos, deve retornar 200. O Checkout é realizado', async () => {
             const resposta = await request(app)
                 .post('/api/checkout')
+                .set('Authorization', `Bearer ${token}`)
                 .send({
                     items: [
                         { productId: 1, quantity: 2 },],
@@ -29,6 +41,7 @@ describe('Checkout Controller', () => {
         it('Quando informo produto inexistente, deve retornar 400. O Checkout não é realizado', async () => {
             const resposta = await request(app)
                 .post('/api/checkout')
+                .set('Authorization', `Bearer ${token}`)
                 .send({
                     items: [
                         { productId: 5, quantity: 3 },],

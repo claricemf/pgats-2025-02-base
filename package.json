@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha rest/test/**/*.test.js --timeout 10000", 
-    "test-external": "mocha rest/test/external/**/*.test.js --timeout 10000", 
-    "test-controller": "mocha rest/test/controller/**/*.test.js --timeout 10000", 
+    "test": "mocha rest/test/**/*.test.js --timeout 10000 --reporter mochawesome",
+    "test-external": "mocha rest/test/external/**/*.test.js --timeout 10000 --reporter mochawesome",
+    "test-controller": "mocha rest/test/controller/**/*.test.js --timeout 10000 --reporter mochawesome",
     "start": "node src/server.js"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "graphql": "^16.11.0",
     "jsonwebtoken": "^9.0.2",
     "mocha": "^11.7.4",
+    "mochawesome": "^7.1.4",
     "sinon": "^21.0.0",
     "swagger-ui-express": "^5.0.1"
   },
