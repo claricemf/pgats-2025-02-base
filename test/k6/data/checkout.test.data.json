@@ -1,0 +1,80 @@
+[
+    {
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ],
+      "freight": 0,
+      "paymentMethod": "boleto"
+    },
+    {
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ],
+      "freight": 0,
+      "paymentMethod": "credit_card",
+      "cardData": {
+        "number": "4111111111111111",
+        "name": "Nome do Titular",
+        "expiry": "12/30",
+        "cvv": "123"        
+      }
+    },
+     {
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ],
+      "freight": 0,
+      "paymentMethod": "boleto"
+    },
+    {
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ],
+      "freight": 0,
+      "paymentMethod": "credit_card",
+      "cardData": {
+        "number": "4111111111111111",
+        "name": "Nome do Titular",
+        "expiry": "12/30",
+        "cvv": "123"        
+      }
+    },
+     {
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ],
+      "freight": 0,
+      "paymentMethod": "boleto"
+    },
+    {
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ],
+      "freight": 0,
+      "paymentMethod": "credit_card",
+      "cardData": {
+        "number": "4111111111111111",
+        "name": "Nome do Titular",
+        "expiry": "12/30",
+        "cvv": "123"        
+      }
+    }
+]
